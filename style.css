@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Inter;
+    background: radial-gradient(circle, rgba(146,117,168,1) 4%, rgba(61,56,80,1) 52%, rgba(44,47,64,1) 75%);
+}
+
+main{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+main p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture{
+    position: relative;
+}
+
+.picture p{
+    display: flex;
+    
+    position: relative;
+    color: #fff;
+}
+
+.picture img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Login part*/
+.mainCard{
+    margin: 3em;
+}
+
+.mainCard h1{
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+.mainCard .log{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.log input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(61,56,80,1);
+    font-size: 1em;
+}
+
+.log button{
+    background: linear-gradient(260deg, rgba(107,103,119,1) 8%, rgba(60,65,92,1) 76%);
+    color: #fff;
+    height: 2.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    gap: 3em;
+}
+
+.social h2{
+    font-size: 1em;
+    opacity: .4;
+}
+.social button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    height: 2.5em;
+    border: none;
+    cursor: pointer;
+    gap: 2em;
+}
+
+.google{
+    background-image: linear-gradient( 109.6deg,  rgba(231,76,60,1) 11.2%, rgba(203,67,53,1) 91.1% );
+    color: #fff;
+    font-weight: 700;
+}
+
+.google img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.insta{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.insta img{
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.mainCard p{
+    margin-top: 2em;
+
+}
+
+.logIn{
+    margin-top: .5em;
+    border: none;
+    background: none;
+    color: rgba(60,65,92,1);
+    cursor: pointer;
+}
+
+/*Register part*/
+.registerCard{
+    margin: 3em;
+}
+
+.registerCard h1{
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+
+.reg{
+    height: 403px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+
+.reg div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg input{
+    max-width: 200px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(61,56,80,1);
+    font-size: 1em;
+}
+
+.reg button{
+    background: linear-gradient(260deg, rgba(107,103,119,1) 8%, rgba(60,65,92,1) 76%);
+    color: #fff;
+    height: 2.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+.registerCard p{
+    margin-top: 3em;
+}
+
+.signUp{
+    margin-top: .5em;
+    border: none;
+    background: none;
+    color: rgba(60,65,92,1);
+    cursor: pointer;
+}
+/*Hover effect*/
+
+main:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 50px 0 rgba(188, 119, 254, 0.6);
+    transition: 0.4s ease;
+}
+
+/*Validation*/
+
+input:valid{
+    border-bottom: 2px solid green !important;
+}
+
+/* */
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1391px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 940px){
+    main{
+        display: flex;
+        flex-direction: column;
+        min-width: 375px;
+    }
+
+    article{
+        display: none
+    }
+}
+
+@media screen and (max-width: 620px){
+    .registerCard *{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+}
+

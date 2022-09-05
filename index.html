@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+    <title>Connection</title>
+</head>
+<body>
+  <main>
+    <article class="picture">
+        <img src="img/photo-1662311896443-c4d2a0542615.avif" alt="clothes">
+        <p>photo by Mathias Reding on Unsplash </p>
+    </article>
+    <section class="mainCard">
+      <h1>Sign In</h1>
+
+      <form class="log" action="#" method="post">
+        <input type="email" name="usermail" id="mail" placeholder="Email Address" required>
+        <input type="password" name="userpwd" id="pwd" minlength="6" placeholder="Password" required>
+        <button type="submit">Continue</button>
+      </form>
+
+        <form class="social" action="" method="get">
+          <h2>or Connect with Social Media</h2>
+          <button type="submit" class="google"><img src="img/google.png">Sign In With Google</button>
+          <button type="submit" class="insta"><img src="img/insta.jpeg">Sign In With Instagram</button>
+        </form>
+
+      <p>Don't have an account ? <button class="signUp">Sign Up</button></p>
+    </section>
+    <section class="registerCard hidden">
+        <h1>Register</h1>
+        <form class="reg" action="#" method="get">
+          <div>
+            <input type="text" id="fName" minlength="4" placeholder="First Name*" required>
+            <input type="text" id="lName" minlength="4" placeholder="Last Name*" required>
+          </div>
+          <div>
+            <input type="email" id="mail" placeholder="Email Address*" required>
+            <input type="tel" id="userphone" minlength="10" placeholder="Phone*" required>
+          </div>
+          <div>
+            <input type="password" id="regpwd" minlength="6" placeholder="Password*" required>
+            <input type="password" id="confirmPwd" placeholder="Confirm Password*" required>
+          </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account ? <button class="logIn">Log In</button></p>
+    </section>
+  </main>
+</body>
+</html>
